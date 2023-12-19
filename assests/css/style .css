@@ -1,0 +1,59 @@
+:root {
+  --color-white: #fff;
+  --color-primary: #ffa500;
+  --color-dark: #000;
+}
+
+.navbar.fcnavbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.fcnavbar.navbar-brand {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.fcnavbar.navbar-nav .nav-link {
+  color: var(--color-white);
+  height: 56px;
+  line-height: 56px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fcnavbar .navbar-nav .nav-link:focus,
+.fcnavbar.navbar-nav .nav-link:hover,
+.fcnavbar .navbar-nav .active > .nav-link,
+.fcnavbar .navbar-nav .nav-link.active,
+.fcnavbar .navbar-nav .nav-link.show,
+.fcnavbar.navbar-nav .show > .nav-link {
+  color: var(--color-primary);
+  border-bottom: 4px solid var(--color-primary);
+}
+
+/*----------------css for slider section home pages ---------------*/
+
+.mainslider .carousel-inner,
+.mainslider .carousel-item,
+.mainslider .carousel-item > img {
+  height: 400px;
+}
+
+.mainslider .carousel-item > img {
+  object-fit: cover;
+}
+
+.mainslider .carousel-caption {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  color: var(--color-dark);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media all and (min-width: 992px) {
+  .fcnavbar .nav-item {
+    margin-left: 5px;
+  }
+}
