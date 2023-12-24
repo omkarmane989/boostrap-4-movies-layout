@@ -31,7 +31,7 @@
   border-bottom: 4px solid var(--color-primary);
 }
 
-/*----------------css for slider section home pages ---------------*/
+/*----------------css for slider section css home pages ---------------*/
 
 .mainslider .carousel-inner,
 .mainslider .carousel-item,
@@ -52,16 +52,19 @@
   font-size: 22px;
 }
 
-/*<<<<<<<<<<<<<<<<<<<<css for homeparallax starts from here >>>>>>>>>>>>>>>>>>>>>
+/*<<<<<<<<<<<<<<<<<<<<css for homeparallax css starts from here >>>>>>>>>>>>>>>>>>>>>
 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/lights.jpg);*/
 
-.homeparallax {
-  background-image: url(../images/lights.jpg);
+.parallax {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+}
+.homeparallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/lights.jpg);
 }
 
 .homeparallax::before {
@@ -72,6 +75,19 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<css for video section css starts from here >>>>>>>>>>>>>>>>>>>>*/
+
+.video {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/media.jpg);
+}
+
+.homeGallary img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 @media all and (min-width: 992px) {
