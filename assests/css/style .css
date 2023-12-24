@@ -52,6 +52,28 @@
   font-size: 22px;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<css for homeparallax starts from here >>>>>>>>>>>>>>>>>>>>>
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/lights.jpg);*/
+
+.homeparallax {
+  background-image: url(../images/lights.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.homeparallax::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
 @media all and (min-width: 992px) {
   .fcnavbar .nav-item {
     margin-left: 5px;
