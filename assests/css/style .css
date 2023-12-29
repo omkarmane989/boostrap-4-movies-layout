@@ -90,6 +90,10 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   object-fit: cover;
 }
 
+.footer {
+  background-color: var(--color-dark);
+}
+
 @media all and (min-width: 992px) {
   .fcnavbar .nav-item {
     margin-left: 5px;
